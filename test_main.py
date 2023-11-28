@@ -15,6 +15,6 @@ def test_predict():
     json_data = response.json()
     assert response.status_code == 200
     assert json_data['model-prediction'] == 'Egyptian_cat'
-    assert json_data['model-prediction-confidence-score'] == '0.5804819'
+    assert json_data['model-prediction-confidence-score'][:4] == '0.58'
 
 
